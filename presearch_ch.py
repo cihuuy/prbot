@@ -16,12 +16,12 @@ from selenium.webdriver.common.keys import Keys
 print("Starting presearch bot wotanCode...")
 
 ## Driver relative directory
-driver_path=Service("webdriver\\chromedriver.exe")
+driver_path=Service("webdriver\\chromedriver")
 
 # General Options
 options = webdriver.ChromeOptions()
 # Path to your chrome profile
-options.add_argument("user-data-dir=C:\\Users\\pedro\\AppData\\Local\\Google\\Chrome\\User Data")
+options.add_argument("user-data-dir=/home/bang/.config/google-chrome/Default")
 browser = webdriver.Chrome(options=options, service=driver_path)
 
 # function to search
